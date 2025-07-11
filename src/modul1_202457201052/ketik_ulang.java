@@ -20,12 +20,21 @@ public class ketik_ulang {
             {4, 6, 4, 2, 8, 4, 2, 10},
             {4, 6, 4, 2, 8, 4, 2, 10}
         };
-        for (int a = 0; a < data.length; a++) {
-            for (int b = 0; b < data[a].length; b++) {
-                System.out.print(data[a][b] + " ");
+        int jumlahElemen = 0;
+        int totalElemen = 0;
+        for (int[] data1 : data) {
+            for (int b = 0; b < data1.length; b++) {
+                System.out.print(data1[b] + " ");
+                jumlahElemen = jumlahElemen + data1[b];
+                totalElemen = totalElemen + 1;
             }
             System.out.print("\n");
         }
+        System.out.println("----------------");
+        double rerata = jumlahElemen/totalElemen; 
+        System.out.println("Jumlah Elemen : " + jumlahElemen);
+        System.out.println("totalElemen : " + totalElemen);
+        System.out.println("Nilai Rata-Rata : " + rerata);
     }
 
         }

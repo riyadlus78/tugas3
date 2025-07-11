@@ -7,7 +7,7 @@ package modul1_202457201052;
 
 /**
  *
- * @author rizan
+ * @author riyadlus
  */
 public class data_array {
     public static void main(String[] args) {
